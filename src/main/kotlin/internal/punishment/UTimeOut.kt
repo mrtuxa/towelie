@@ -10,9 +10,4 @@ object UTimeOut {
 
         guild!!.timeoutFor(event.user, time)
     }
-    fun timeOutUntil(event: SlashCommandInteractionEvent, time: Duration) {
-        val guild = event.guild
-
-        val timeoutUntil = guild!!.timeoutUntil(event.user, time)
-    }
 }
